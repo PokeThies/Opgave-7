@@ -1,0 +1,152 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  
+}
+
+header {
+  font-family: $font_main;
+
+  background: $col_eerie-black;
+
+  .navbar-toggler {
+    background: $col_white;
+  }
+
+  .navbar-brand {
+    color: $col_white;
+    font-size: 1.5em;
+  }
+
+  .navbar-brand:hover {
+    color: $col_silver;
+  }
+  .nav-link {
+    color: $col_silver;
+  }
+
+  .nav-item {
+    .nav-link.active  {
+      color: $col_white;
+    }
+
+    .nav-link.active:hover  {
+        color: $col_silver;
+      }
+    
+  }
+
+  .nav-link:hover {
+    color: $col_white;
+  }
+}
+
+.rose-bg {
+  background-color:$col_misty-rose;
+}
+
+.mint-bg {
+  background-color: $col_ash-gray;
+  color: $col_white;
+}
+
+.lightblue-bg {
+  background-color: $col_azure-web;
+}
+
+.grey-bg {
+  background-color: $col_silver;
+
+ 
+    .Price_tag {
+    font-size: 18px;
+  }
+
+
+}
+
+
+
+.black-bg {
+  background-color: $col_eerie-black;
+  
+}
+
+
+footer {
+  color: $col_silver; 
+  background-color: $col_snow;
+}
+
+.centered {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.25rem;
+  
+}
+
+.sales_img {
+  position: relative;
+  text-align: center;
+  color: white;
+
+  .sales_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    white-space: nowrap;
+
+    .sales_main {
+      font-weight: bold;
+      font-size: 2rem;
+    }
+  }
+}
+
+
+i {
+  font-size: 125%;
+ 
+}
+
+.styled-button {
+  background-color: $col_ash-gray; 
+  color: white; 
+  padding: 5px 4px; 
+  width: 250px;
+  font-size: 16px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+
+
+  &:hover {
+    background-color: #789e8d; 
+  }
+
+ 
+}
+
+.text__area {
+  width: 250px;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
